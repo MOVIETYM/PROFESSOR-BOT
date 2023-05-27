@@ -324,29 +324,7 @@ Delete A Lot Of Messages From Groups!
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
 • /share - 𝚁𝚎𝚙𝚕𝚢 𝚆𝚒𝚝𝚑 𝙰𝚗𝚢 𝚃𝚎𝚡𝚝 𝚃𝚘 𝚂𝚎𝚗𝚍 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 """
 
-    
-    SONG_TXT = """<b>🎶SONG DOWNLOAD MODULE🎶</b>
-    
-🎶 Song download module,Helps to download your favourite song.Try it..🎶
-
-<b>COMMANDS</b>
-
-››  /song SONG NAME
-Eg: <code>/song starboy</code>
-NOTE:- WORKS ONLY ON PM🎶"""
-
-  VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
-• 𝘜𝘴𝘢𝘨𝘦
-𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
-𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/fQOjh-mmNKo)
-• 𝘛𝘺𝘱𝘦 /video video name 
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
-<code>/video kgf malayalam trailer</code>
-<code>/video https://youtu.be/fQOjh-mmNKo</code>
-NOTE - Works on both pm and group"""
-
-
+   
     
 
 
