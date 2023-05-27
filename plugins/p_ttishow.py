@@ -37,7 +37,7 @@ async def save_group(bot, message):
             return
         buttons = [
             [
-                InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴', url=f"https://t.me/{temp.U_NAME}?start=help")
+              InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup=InlineKeyboardMarkup(buttons)
@@ -51,10 +51,15 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            if WELCOM_PIC:
-                temp.MELCOW['welcome'] = await message.reply_photo(photo=WELCOM_PIC, caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title))
-            else:
-                temp.MELCOW['welcome'] = await message.reply_text(text=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title))
+            temp.MELCOW['welcome'] = await message.reply_photo(
+                                         photo=random.choice(JOIN_PIC),
+                                         caption=f"""<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>""",
+                                         )
+                
+  JOIN_PIC = [
+    "https://telegra.ph/file/c0814442ed2c9e121730a.jpg"
+  ]                
+                       
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
