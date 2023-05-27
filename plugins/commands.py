@@ -562,15 +562,25 @@ async def help(bot, message):
         photo=random.choice(ALL_PIC),
         caption="HI welcome",
         reply_markup=InlineKeyboardMarkup( [[ 
-            InlineKeyboardButton("Movie Time", callback_data="alert_1"),
-            InlineKeyboardButton("Button Name", callback_data="help")
+            InlineKeyboardButton('𝗘𝘅𝘁𝗿𝗮 𝗠𝗼𝗱𝘀', callback_data='extra')          
+            ],[                       
+            InlineKeyboardButton('𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗣𝗛', callback_data='tele'),       
+            InlineKeyboardButton('𝗝𝗦𝗢𝗡𝗘', callback_data='son'),
+            InlineKeyboardButton('𝐓𝐓𝐒', callback_data='ttss')         
             ],[
-            InlineKeyboardButton("Button 3", callback_data="alert_1")
-            ]] 
-            ) 
-        )
-
-
+            InlineKeyboardButton('𝐏𝐀𝐒𝐓𝐄', callback_data='pastes'),
+            InlineKeyboardButton('𝐏𝐈𝐍𝐆', callback_data='pings'),                                  
+            InlineKeyboardButton('𝐅𝐎𝐍𝐓', callback_data='fond')
+            ],[
+            InlineKeyboardButton('𝐒𝐎𝐍𝐆', callback_data='songs'),
+            InlineKeyboardButton("𝐕𝐈𝐃𝐄𝐎", callback_data='video')
+            ],[
+            InlineKeyboardButton('🔮 𝗦𝗧𝗔𝗧𝗨𝗦 🔮', callback_data='stats')
+            ],[
+            InlineKeyboardButton('🚫 𝘾𝙇𝙊𝙎𝙀', callback_data='close_data')         
+            ]]
+            )
+        ) 
 
 
 
