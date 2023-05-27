@@ -575,8 +575,7 @@ async def help(bot, message):
             InlineKeyboardButton('𝐒𝐎𝐍𝐆', callback_data='songs'),
             InlineKeyboardButton("𝐕𝐈𝐃𝐄𝐎", callback_data='video')
             ],[
-            InlineKeyboardButton('🔮 𝗦𝗧𝗔𝗧𝗨𝗦 🔮', callback_data='stats')
-            ],[
+            InlineKeyboardButton('🔮 𝗦𝗧𝗔𝗧𝗨𝗦 🔮', callback_data='stats'),
             InlineKeyboardButton('🚫 𝘾𝙇𝙊𝙎𝙀', callback_data='close_data')         
             ]]
             )
