@@ -568,22 +568,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Extra Mods', callback_data='extra')          
+            InlineKeyboardButton('𝗘𝘅𝘁𝗿𝗮 𝗠𝗼𝗱𝘀', callback_data='extra')          
             ],[                       
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele'),       
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')         
+            InlineKeyboardButton('𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗣𝗛', callback_data='tele'),       
+            InlineKeyboardButton('𝗝𝗦𝗢𝗡𝗘', callback_data='son'),
+            InlineKeyboardButton('𝐓𝐓𝐒', callback_data='ttss')         
             ],[
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),                                  
-            InlineKeyboardButton('𝙵𝙾𝙽𝙳', callback_data='fond')
+            InlineKeyboardButton('𝐏𝐀𝐒𝐓𝐄', callback_data='pastes'),
+            InlineKeyboardButton('𝐏𝐈𝐍𝐆', callback_data='pings'),                                  
+            InlineKeyboardButton('𝐅𝐎𝐍𝐓', callback_data='fond')
             ],[
-            InlineKeyboardButton('𝚈𝚃-𝙳𝙻', callback_data='ytdl')
+            InlineKeyboardButton('𝐒𝐎𝐍𝐆', callback_data='songs'),
+            InlineKeyboardButton("𝐕𝐈𝐃𝐄𝐎", callback_data='video')
             ],[
-            InlineKeyboardButton('🔮 𝚂𝚃𝙰𝚃𝚄𝚂 🔮', callback_data='stats')
+            InlineKeyboardButton('🔮 𝗦𝗧𝗔𝗧𝗨𝗦 🔮', callback_data='stats')
             ],[
-            InlineKeyboardButton('🚫 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')           
+            InlineKeyboardButton('🚫 𝘾𝙇𝙊𝙎𝙀', callback_data='close_data'),
+            InlineKeyboardButton('🏠 𝙃𝙊𝙈𝙀 🏠', callback_data='start')           
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.edit_message_media(  
@@ -592,10 +593,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('❣️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ❣️', callback_data='source')
-            ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton('🚫 𝘾𝙇𝙊𝙎𝙀', callback_data='close_data'),
+            InlineKeyboardButton('🏠 𝙃𝙊𝙈𝙀 🏠', callback_data='start')        
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.edit_message_media(
