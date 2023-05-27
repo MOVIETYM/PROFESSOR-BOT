@@ -36,7 +36,7 @@ UPDATE_PIC = [
   "https://telegra.ph/file/cea9ec85ebdd0edfdc689.jpg"
 ]
 
-@Client.on_message(filters.command("start") & filters.incoming)
+@Client.on_message(filters.command("start"))
 async def start(client, message):
     
     Out = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
