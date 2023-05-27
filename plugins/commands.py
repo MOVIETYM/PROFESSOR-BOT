@@ -553,6 +553,22 @@ async def send_chatmsg(bot, message):
             await message.reply_text("<b>Aɴ Eʀʀᴏʀ Oᴄᴄᴜʀʀᴇᴅ !</b>")
     else:
         await message.reply_text("<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ...</b>")
+        
+        
+               
+@Client.on_message(filters.private & filters.command("help"))
+async def help(bot, message): 
+    await message.reply_photo(
+        photo=random.choice(ALL_PIC),
+        caption="HI welcome",
+        reply_markup=InlineKeyboardMarkup( [[ 
+            InlineKeyboardButton("Movie Time", callback_data="alert_1"),
+            InlineKeyboardButton("Button Name", callback_data="help")
+            ],[
+            InlineKeyboardButton("Button 3", callback_data="alert_1")
+            ]] 
+            ) 
+        )
 
 
 
